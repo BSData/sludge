@@ -1213,7 +1213,7 @@ user’s next activation.</characteristic>
     </profile>
     <profile id="c348-1de8-f28a-f2b9" name="Horrors of War" hidden="false" typeId="3f3f-4bef-0bab-2cff" typeName="--- Ability ---">
       <characteristics>
-        <characteristic name="Action" typeId="3659-df21-f698-59ad">Short</characteristic>
+        <characteristic name="Action" typeId="3659-df21-f698-59ad">Long</characteristic>
         <characteristic name="Type" typeId="b356-e832-95cc-4467">Sorcery</characteristic>
         <characteristic name="Range" typeId="d24a-25b3-c0bd-f75f">LOS</characteristic>
         <characteristic name="TN" typeId="3b97-3988-8ead-1039">6</characteristic>
