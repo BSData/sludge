@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="40c0-2c5f-10b2-5b10" name="Cultists" revision="1" battleScribeVersion="2.03" library="false" gameSystemId="2a98-0be2-053b-f7e1" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <entryLinks>
+    <entryLink id="f00f-8033-4cee-59c9" name="Arcanists" hidden="false" collective="false" import="true" targetId="97c9-96c8-fd65-5935" type="selectionEntry"/>
+    <entryLink id="9024-899e-6eb5-bc3e" name="Chaplain" hidden="false" collective="false" import="true" targetId="6fc9-b308-a4da-9367" type="selectionEntry"/>
+    <entryLink id="ed15-8d83-5ab1-f114" name="Commander" hidden="false" collective="false" import="true" targetId="00a3-350b-5484-8004" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f0ec-42de-5dcd-e211" type="min"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="975a-68a0-779f-3b4d" name="Field Gun" hidden="false" collective="false" import="true" targetId="8fe8-9293-fa30-4685" type="selectionEntry"/>
+    <entryLink id="0e52-362d-5b18-4b77" name="Foot Knight" hidden="false" collective="false" import="true" targetId="cb93-0a38-93a6-6e8d" type="selectionEntry"/>
+    <entryLink id="b38a-178c-9936-db80" name="Heavy Cavalry" hidden="false" collective="false" import="true" targetId="d1a8-9e66-5739-5838" type="selectionEntry"/>
+    <entryLink id="e47b-59fa-f2a7-1cb8" name="Heavy Knights" hidden="false" collective="false" import="true" targetId="c3be-4c6b-d743-c714" type="selectionEntry"/>
+    <entryLink id="3e54-4190-c685-f0ba" name="Jagers" hidden="false" collective="false" import="true" targetId="cdba-42a4-03a0-fc90" type="selectionEntry"/>
+    <entryLink id="92a6-931f-f795-ba04" name="Light Cavalry" hidden="false" collective="false" import="true" targetId="0062-85e4-0431-f4d1" type="selectionEntry"/>
+    <entryLink id="cfae-8c4f-21bb-4797" name="Line Infantry" hidden="false" collective="false" import="true" targetId="4f8f-386c-0e88-d258" type="selectionEntry"/>
+    <entryLink id="daf6-cf46-12c8-e301" name="Officer" hidden="false" collective="false" import="true" targetId="109d-5ef6-5b77-2bf2" type="selectionEntry"/>
+    <entryLink id="56d7-a790-9dce-7bf3" name="Shock Troopers" hidden="false" collective="false" import="true" targetId="e8e6-bdc7-941e-b99f" type="selectionEntry"/>
+    <entryLink id="a3f5-815d-2e99-bb4a" name="Sorcerer" hidden="false" collective="false" import="true" targetId="867f-7741-a286-1d17" type="selectionEntry"/>
+    <entryLink id="d787-2492-3037-692e" name="Priest of the Manticore" hidden="false" collective="false" import="true" targetId="6887-ea1d-3e3b-a218" type="selectionEntry"/>
+    <entryLink id="90c8-1094-7796-6faf" name="Cultist Throngs" hidden="false" collective="false" import="true" targetId="3745-fa8f-f857-6ccf" type="selectionEntry"/>
+    <entryLink id="8281-82e6-7726-89e9" name="Zealots" hidden="false" collective="false" import="true" targetId="32d8-a027-812a-ac65" type="selectionEntry"/>
+    <entryLink id="2485-cf5e-316e-7478" name="Crusaders" hidden="false" collective="false" import="true" targetId="5543-31cf-be2e-147a" type="selectionEntry"/>
+    <entryLink id="b0c0-1198-4ba2-136d" name="Enslaved Giant" hidden="false" collective="false" import="true" targetId="b107-e274-50b8-1b4e" type="selectionEntry"/>
+  </entryLinks>
+</catalogue>
