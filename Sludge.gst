@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="2a98-0be2-053b-f7e1" name="Sludge" revision="2" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="2a98-0be2-053b-f7e1" name="Sludge" revision="3" battleScribeVersion="2.03" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="690f-6ec1-3a45-0ffc" name="Blaster V3"/>
     <publication id="f50d-3cea-751a-1d06" name="Blaster V4"/>
@@ -41,7 +41,11 @@
     </profileType>
   </profileTypes>
   <categoryEntries>
-    <categoryEntry id="1e83-9df6-39c1-f39c" name="Hero" hidden="false"/>
+    <categoryEntry id="1e83-9df6-39c1-f39c" name="Hero" hidden="false">
+      <infoLinks>
+        <infoLink id="8106-b00b-77f8-57ae" name="Tactical Staff" hidden="false" targetId="edde-dd6b-9aad-755b" type="rule"/>
+      </infoLinks>
+    </categoryEntry>
     <categoryEntry id="e456-9a72-74a3-c672" name="Regiment" hidden="false">
       <infoLinks>
         <infoLink id="de62-52f4-6169-8c1c" name="Formations" hidden="false" targetId="d5d4-1197-39a1-85f0" type="rule"/>
@@ -907,8 +911,8 @@ commander himself also benefits from the glorious battle standard.</description>
             <characteristic name="Speed" typeId="76fe-9a2a-b52c-7a61">4</characteristic>
             <characteristic name="Brutality" typeId="2947-0bce-f1e8-bf71">1</characteristic>
             <characteristic name="Cunning" typeId="b268-ae8a-4002-9bb8">2</characteristic>
-            <characteristic name="Faith" typeId="bcf6-2d70-7020-f5b0">2</characteristic>
-            <characteristic name="Arcana" typeId="a272-ef29-2448-76e4">0</characteristic>
+            <characteristic name="Faith" typeId="bcf6-2d70-7020-f5b0">1</characteristic>
+            <characteristic name="Arcana" typeId="a272-ef29-2448-76e4">1</characteristic>
             <characteristic name="Defence" typeId="4784-a2b1-4078-5e01">6</characteristic>
             <characteristic name="Wounds" typeId="a33c-c953-b917-d630">2</characteristic>
           </characteristics>
@@ -1808,6 +1812,9 @@ All friendly units gain +2 Faith while within 15” of this figure.</description
                   </modifiers>
                 </infoLink>
               </infoLinks>
+              <costs>
+                <cost name="Points" typeId="8a76-0f71-96e3-b97c" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="5730-6e01-ec7a-f0b4" name="Martial Weapon" hidden="false" collective="false" import="true" type="upgrade">
               <infoLinks>
@@ -1822,6 +1829,9 @@ All friendly units gain +2 Faith while within 15” of this figure.</description
                 </infoLink>
                 <infoLink id="bc5f-15b1-f283-e0ee" name="Shield Wall" hidden="false" targetId="8975-b274-03b4-6142" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="Points" typeId="8a76-0f71-96e3-b97c" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -2124,7 +2134,7 @@ All friendly units gain +2 Faith while within 15” of this figure.</description
             <infoLink id="724a-eaa8-1e69-02be" name="Blood Ritual" hidden="false" targetId="856f-b6dc-bd56-b83f" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="Points" typeId="8a76-0f71-96e3-b97c" value="10.0"/>
+            <cost name="Points" typeId="8a76-0f71-96e3-b97c" value="5.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -2188,7 +2198,7 @@ All friendly units gain +2 Faith while within 15” of this figure.</description
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="Points" typeId="8a76-0f71-96e3-b97c" value="45.0"/>
+        <cost name="Points" typeId="8a76-0f71-96e3-b97c" value="40.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d5af-a66d-cbaa-ab81" name="Imperial Zouaves" publicationId="f50d-3cea-751a-1d06" hidden="false" collective="false" import="true" type="unit">
@@ -2397,6 +2407,11 @@ The assassins activate in the following Activation Phase as normal.</description
     <rule id="8975-b274-03b4-6142" name="Shield Wall" hidden="false">
       <description>Units with ceramic shields may assume the column formation as if they were line infantry.</description>
     </rule>
+    <rule id="edde-dd6b-9aad-755b" name="Tactical Staff" hidden="false">
+      <description>Heroes are individual staff who are constantly on the move as they perform their duties on the battlefield.
+This makes them extremely impractical targets for artillery.
+Heroes gain +3 defense against artillery units.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="6638-665c-032b-cdfb" name="Knightly Arms" publicationId="690f-6ec1-3a45-0ffc" page="49" hidden="false" typeId="1231-8a7d-8660-4b58" typeName="-- Weapon --">
@@ -2405,7 +2420,7 @@ The assassins activate in the following Activation Phase as normal.</description
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">-</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">6</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">2</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+3</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">3</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36">SHOCK 2 on Charge</characteristic>
       </characteristics>
     </profile>
@@ -2415,7 +2430,7 @@ The assassins activate in the following Activation Phase as normal.</description
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">-</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">6</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">2</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+3</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">3</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36">SHOCK 2 on Charge</characteristic>
       </characteristics>
     </profile>
@@ -2425,7 +2440,7 @@ The assassins activate in the following Activation Phase as normal.</description
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">-</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">6</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">3</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+3</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">3</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36"/>
       </characteristics>
     </profile>
@@ -2435,7 +2450,7 @@ The assassins activate in the following Activation Phase as normal.</description
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">-</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">7</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">3</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+2</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">2</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36"/>
       </characteristics>
     </profile>
@@ -2445,7 +2460,7 @@ The assassins activate in the following Activation Phase as normal.</description
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">-</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">6</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">1</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+2</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">2</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36"/>
       </characteristics>
     </profile>
@@ -2455,7 +2470,7 @@ The assassins activate in the following Activation Phase as normal.</description
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">12</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">6</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">2</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+2</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">2</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36">SHOCK 2</characteristic>
       </characteristics>
     </profile>
@@ -2465,7 +2480,7 @@ The assassins activate in the following Activation Phase as normal.</description
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">12</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">6</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">1</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+2</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">2</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36"/>
       </characteristics>
     </profile>
@@ -2475,7 +2490,7 @@ The assassins activate in the following Activation Phase as normal.</description
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">14</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">7</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">3</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+1</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">1</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36"/>
       </characteristics>
     </profile>
@@ -2485,7 +2500,7 @@ The assassins activate in the following Activation Phase as normal.</description
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">14</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">7</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">2</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+1</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">1</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36"/>
       </characteristics>
     </profile>
@@ -2495,7 +2510,7 @@ The assassins activate in the following Activation Phase as normal.</description
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">Guess +d10</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">-</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">3</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+5</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">5</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36">Bounce d10, SHOCK 4</characteristic>
       </characteristics>
     </profile>
@@ -2645,7 +2660,7 @@ user’s next activation.</characteristic>
         <characteristic name="Action" typeId="3659-df21-f698-59ad">Long</characteristic>
         <characteristic name="Type" typeId="b356-e832-95cc-4467">Sorcery</characteristic>
         <characteristic name="Range" typeId="d24a-25b3-c0bd-f75f">LOS</characteristic>
-        <characteristic name="TN" typeId="3b97-3988-8ead-1039">6</characteristic>
+        <characteristic name="TN" typeId="3b97-3988-8ead-1039">5</characteristic>
         <characteristic name="Burst" typeId="ee2e-080f-055b-061a">-</characteristic>
         <characteristic name="Effect" typeId="e0f5-c1c4-0314-c9a6">Place a single 8 gore token on the battlefield.</characteristic>
       </characteristics>
@@ -2706,7 +2721,7 @@ user’s next activation.</characteristic>
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">12</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">8</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">5</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+2</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">2</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36">Shock 2</characteristic>
       </characteristics>
     </profile>
@@ -2716,7 +2731,7 @@ user’s next activation.</characteristic>
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">4</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">9</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">7</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+2</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">2</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36">Shock 6, Burn</characteristic>
       </characteristics>
     </profile>
@@ -2726,7 +2741,7 @@ user’s next activation.</characteristic>
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">-</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">5</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">2</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+3</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">3</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36">Shock 4, Dismember</characteristic>
       </characteristics>
     </profile>
@@ -2736,7 +2751,7 @@ user’s next activation.</characteristic>
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">24</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">7</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">3</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+2</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">2</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36">Daze, Shock 4</characteristic>
       </characteristics>
     </profile>
@@ -2765,7 +2780,7 @@ user’s next activation.</characteristic>
         <characteristic name="Action" typeId="3659-df21-f698-59ad">Long</characteristic>
         <characteristic name="Type" typeId="b356-e832-95cc-4467">Sorcery</characteristic>
         <characteristic name="Range" typeId="d24a-25b3-c0bd-f75f">LOS</characteristic>
-        <characteristic name="TN" typeId="3b97-3988-8ead-1039">6</characteristic>
+        <characteristic name="TN" typeId="3b97-3988-8ead-1039">5</characteristic>
         <characteristic name="Burst" typeId="ee2e-080f-055b-061a">-</characteristic>
         <characteristic name="Effect" typeId="e0f5-c1c4-0314-c9a6">Target friendly unit may gain one stress to perform the combat long order.</characteristic>
       </characteristics>
@@ -2776,7 +2791,7 @@ user’s next activation.</characteristic>
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">3</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">7</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">3</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+3</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">3</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36">SHOCK 2 and DISMEMBER</characteristic>
       </characteristics>
     </profile>
@@ -2786,7 +2801,7 @@ user’s next activation.</characteristic>
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">18</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">7</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">3</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+2</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">2</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36">SHOCK 2 and DISMEMBER</characteristic>
       </characteristics>
     </profile>
@@ -2816,7 +2831,7 @@ user’s next activation.</characteristic>
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">16</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">7</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">3</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+1</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">1</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36">BLEED</characteristic>
       </characteristics>
     </profile>
@@ -2860,7 +2875,7 @@ Units cannot exceed original unit strength.</characteristic>
         <characteristic name="Range" typeId="d24a-25b3-c0bd-f75f">12</characteristic>
         <characteristic name="TN" typeId="3b97-3988-8ead-1039">7</characteristic>
         <characteristic name="Burst" typeId="ee2e-080f-055b-061a">2</characteristic>
-        <characteristic name="Effect" typeId="e0f5-c1c4-0314-c9a6">+1, DAZE.
+        <characteristic name="Effect" typeId="e0f5-c1c4-0314-c9a6">Damage 1, DAZE.
 If this attack removes a figure from play, replace that figure with a new Zealot under your control.
 Zealots created this way activate after all other units have activated, right before the nerve phase.</characteristic>
       </characteristics>
@@ -2882,7 +2897,7 @@ This sorcery lasts until the user’s next activation.</characteristic>
         <characteristic name="Action" typeId="3659-df21-f698-59ad">Long</characteristic>
         <characteristic name="Type" typeId="b356-e832-95cc-4467">Sorcery</characteristic>
         <characteristic name="Range" typeId="d24a-25b3-c0bd-f75f">12</characteristic>
-        <characteristic name="TN" typeId="3b97-3988-8ead-1039">6</characteristic>
+        <characteristic name="TN" typeId="3b97-3988-8ead-1039">5</characteristic>
         <characteristic name="Burst" typeId="ee2e-080f-055b-061a">-</characteristic>
         <characteristic name="Effect" typeId="e0f5-c1c4-0314-c9a6">All units within range gain 1 stress.</characteristic>
       </characteristics>
@@ -2893,7 +2908,7 @@ This sorcery lasts until the user’s next activation.</characteristic>
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">-</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">7</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">3</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+1</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">1</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36">DAZE</characteristic>
       </characteristics>
     </profile>
@@ -2903,7 +2918,7 @@ This sorcery lasts until the user’s next activation.</characteristic>
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">-</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">7</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">2</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+1</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">1</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36">DAZE</characteristic>
       </characteristics>
     </profile>
@@ -2913,7 +2928,7 @@ This sorcery lasts until the user’s next activation.</characteristic>
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">8</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">7</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">3</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+1</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">1</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36">DAZE</characteristic>
       </characteristics>
     </profile>
@@ -2923,7 +2938,7 @@ This sorcery lasts until the user’s next activation.</characteristic>
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">8</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">7</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">2</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+1</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">1</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36">DAZE</characteristic>
       </characteristics>
     </profile>
@@ -2945,7 +2960,7 @@ This unit cannot exceed the original unit strength.</characteristic>
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">-</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">6</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">2</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+3</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">3</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36"/>
       </characteristics>
     </profile>
@@ -2955,7 +2970,7 @@ This unit cannot exceed the original unit strength.</characteristic>
         <characteristic name="Range" typeId="ed90-5160-6b9a-06fe">-</characteristic>
         <characteristic name="TN" typeId="872b-0f66-5fc4-14fd">6</characteristic>
         <characteristic name="Burst" typeId="7474-4b21-4cd8-d9f9">2</characteristic>
-        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">+2</characteristic>
+        <characteristic name="Dmg" typeId="e7f2-1487-6c95-3a26">2</characteristic>
         <characteristic name="Effect" typeId="e339-e6bf-a6ef-ad36"/>
       </characteristics>
     </profile>
